@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siomai Daiynasty</title>
+    
+    <link rel="stylesheet" href="color2.css" />
+    <link rel="javascript" href="scrip2.js" />
+    <script src="https://kit.fontawesome.com/f02a36f28e.js" crossorigin="anonymous"></script>
+<head>
+    <title>Menu List</title>
+</head>
+
+<body>
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#2">Siomai</a></li>
+            <li><a href="#1">Siomai with rice</a></li>
+            <li><a href="#3">Hotdog</a></li>
+            <li><a href="#4">Drinks</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="item">
+            <img src="siomai-with-rice.png" alt="siomai-rice" id="1">
+            <h3 >Siomai-with-rice</h3>
+            <span class="stock"></span>
+            <span class="prices">Price ₱50.00</span>
+            <span class="price">₱50.00</span>
+                
+        </div>
+        <script>
+            // set the stock number dynamically
+            var stockNumber = 50; // replace with your actual stock number
+            var stockElement = document.querySelector('.stock');
+            if (stockNumber > 0) {
+                stockElement.textContent = 'In stock: ' + stockNumber;
+            } else {
+                stockElement.classList.add('out-of-stock');
+                stockElement.textContent = 'Out of stock';
+            }
+        </script>
+        <div class="item">
+            <img src="siomai-250g-2.png" alt="sioami" id="2">
+            <h3 >Siomai</h3>
+        <span class="prices1">Price ₱5.00</span>
+        <span class="price1">₱5.00</span>
+        <span class="stock1"></span>
+        </div>
+        <script>
+            // set the stock number dynamically
+            var stockNumber = 50; // replace with your actual stock number
+            var stockElement = document.querySelector('.stock1');
+            if (stockNumber > 0) {
+                stockElement.textContent = 'In stock: ' + stockNumber;
+            } else {
+                stockElement.classList.add('out-of-stock');
+                stockElement.textContent = 'Out of stock';
+            }
+        </script>
+        <div class="item">
+            <img src="Basic-Hot-Dogs.jpg" alt="Hot-dog" id="3">
+            <h3 >Hotdog</h3>
+        <span class="prices2">Price ₱25.00</span>
+        <span class="price2">₱25.00</span>
+        <span class="stock2"></span>
+        </div>
+        <script>
+            // set the stock number dynamically
+            var stockNumber = 50; // replace with your actual stock number
+            var stockElement = document.querySelector('.stock2');
+            if (stockNumber > 0) {
+                stockElement.textContent = 'In stock: ' + stockNumber;
+            } else {
+                stockElement.classList.add('out-of-stock');
+                stockElement.textContent = 'Out of stock';
+            }
+        </script>
+    </section>
+   
+
+
+<div class="container3" id="container-form">
+    <form action="https://formspree.io/f/mgebdnza" method="POST">
+        <p class="contact">Order Now!</p>
+        <div class="login">
+            <label>
+                <input class="input" type="text" name="Name" placeholder="Name" required>
+                <select class="input" name="Order" required>
+                    <option value="">Select an order</option>
+                    <option value="Siomai">Siomai</option>
+                    <option value="Siomai with rice">Siomai with rice</option>
+                    <option value="Hotdog">Hotdog</option>
+                </select>
+            </label>
+            <label>
+                <input class="input" type="number" name="Quantity" placeholder="Quantity" required>
+                <input class="input" type="text" name="Address" placeholder="Address" required>
+            </label>
+            <label>
+                <input class="input" type="number" name="Floor" placeholder="Floor" required>
+                <input class="input" type="text" name="Room Sections Strand" placeholder="Room, Sections, and Strand"
+                    required>
+            </label>
+        </div>
+        <div class="msg">
+            <label>
+                <textarea class="area" id="message" name="Message" placeholder="Leave a message"></textarea>
+            </label>
+        </div>
+        <div class="sendEmail">
+            <button class="submit" type="submit">Send</button>
+        </div>
+
+
+        <script>
+            document.getElementById('container-form').addEventListener('submit', function () {
+                location.reload();
+            });
+
+            document.getElementById('container-form').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent form submission
+                // Perform form validation and registration logic here
+                // Replace this with your actual registration logic
+                alert('Your order has been delivered.');
+            });
+
+        </script>
+    </form>
+</div>
+
+
+
+<section class="footer">
+    <div class="credit">
+        <p class="copy">DevStygian © 2023 | ALL RIGHTS RESERVED</p>
+    </div>
+</section>
+
+</body>
+
+</html>

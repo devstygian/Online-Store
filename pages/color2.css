@@ -1,0 +1,265 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+ }
+ body {
+    background: hsl(32, 100%, 89%);
+    
+ }
+
+ header {
+   
+     background-color: #333;
+     color: #fff;
+     padding: 10px;
+     text-align: center;
+     
+   
+     
+ }
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+ section {
+     padding: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ .item {
+     width: 300px;
+     margin: 20px;
+     box-shadow: 0 0 10px rgba(241, 53, 141, 0.562);
+     border-radius: 5px;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     align-items: last baseline;
+     transition: transform 0.3s ease;
+     margin-top: 150px;
+     margin-bottom: 50px;
+     background-color: antiquewhite;
+
+ }
+
+ .item:hover {
+     transform: translateY(-10px);
+ }
+
+ .item img {
+     width: 300px;
+     height: 250px;
+ }
+
+ .item h3 {
+     margin: 10px;
+     padding-left: 10px;
+ }
+
+ .item span {
+     margin: 10px;
+     line-height: 0.5;
+    padding-left: 10px;
+ }
+
+ .item {
+     position: relative;
+ }
+
+ .price {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     font-size: 1.5em;
+     display: none;
+    padding: 10px 10px;
+     background-color: #f2f2f2;
+     border: #000000 1px solid;
+     border-radius: 50px;
+    
+ }
+
+ .price1 {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     font-size: 1.5em;
+     display: none;
+    padding: 10px 10px;
+     background-color: #f2f2f2;
+    border: #000000 1px solid;
+     border-radius: 50px;
+ }
+
+ .price2 {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     font-size: 1.5em;
+     display: none;
+     background-color: #f2f2f2;
+     padding: 10px 10px;
+    border: #000000 1px solid;
+    border-radius: 50px;
+ }
+
+ .item:hover .price {
+     display: block;
+ }
+
+ .item:hover .price1 {
+     display: block;
+ }
+
+ .item:hover .price2 {
+     display: block;
+ }
+.container3 {
+
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    padding: 40px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    background-color: #e2f4fc;
+
+}
+
+.contact {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 45px;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    color: #0051ff;
+
+}
+
+.input,
+.msg .area {
+    width: 100%;
+    padding: 3%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #3c7979;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    transform: all 0.5s ease;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.login .input {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.login .input:last-child {
+    margin-right: 0;
+
+}
+
+.msg .area {
+    height: 200px;
+
+}
+
+.sendEmail {
+    text-align: center;
+}
+
+.submit {
+    padding: 10px 20px;
+    width: 30%;
+    background: #000000;
+    height: 50%;
+    line-height: 180%;
+    color: rgb(255, 255, 255);
+    border: 0;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 50px;
+
+    border-right: 50%;
+
+}
+
+.submit:hover {
+    background: rgb(24, 24, 24);
+    color: #ffffff;
+}
+
+.input:focus,
+.msg .area:focus {
+    border: 2px solid #ff0000;
+}
+.footer {
+
+    margin-top: 0;
+    padding: 20px 0;
+    /* old background color
+    background-color: rgb(11, 55, 58);*/
+
+    background-color: transparent;
+
+}
+.copy {
+    font-weight: bold;
+    color: #000000;
+}
