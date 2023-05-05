@@ -124,6 +124,17 @@
     padding-bottom: 100%;
     background-size: cover;
 }
+@media only screen and (max-width: 480px) {
+    .background-img {
+            padding-bottom: 80%;
+        }
+    
+        #banner {
+            padding-top: 50px;
+        }
+    }
+  
+
 
 @media (min-width: 768px) {
     .background-img {
@@ -144,10 +155,13 @@ body{
 
 @media only screen and (max-width: 1024px){
     .background-img {
-            padding-bottom: 80%;
+            padding-bottom: 100%;
         }
         #banner{
-            padding-top: 100px;
+            padding-top: 10px;
+        }
+        #custom-orders{
+            padding: 100%;
         }
     }
  #banner {
