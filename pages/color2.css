@@ -251,15 +251,10 @@ nav a:hover {
 }
 .footer {
 
-    margin-top: 0;
     padding: 20px 0;
-    /* old background color
-    background-color: rgb(11, 55, 58);*/
-
-    background-color: transparent;
-
+    background-color: rgb(24, 20, 54);
 }
 .copy {
     font-weight: bold;
-    color: #000000;
-}
+    color: #ffffff;
+}rgb(0, 0, 0)
