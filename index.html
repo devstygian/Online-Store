@@ -135,74 +135,56 @@
 			</section>
 
 
+                <div class="container3" id="container-form">
+                    <form action="https://formspree.io/f/mgebdnza" method="POST">
+                        <p class="contact">Order Now!</p>
+                        <div class="login">
+                            <label>
+                                <input class="input" type="text" name="Name" placeholder="Name" required>
+                                <select class="input" name="Order" required>
+                                    <option value="">Select an order</option>
+                                    <option value="Siomai">Siomai</option>
+                                    <option value="Siomai with rice">Siomai with rice</option>
+                                    <option value="Hotdog">Hotdog</option>
+                                </select>
+                            </label>
+                            <label>
+                                <input class="input" type="number" name="Quantity" placeholder="Quantity" required>
+                                <input class="input" type="text" name="Address" placeholder="Address" required>
+                            </label>
+                            <label>
+                                <input class="input" type="number" name="Floor" placeholder="Floor" required>
+                                <input class="input" type="text" name="Room Sections Strand" placeholder="Room, Sections, and Strand"
+                                    required>
+                            </label>
+                        </div>
+                        <div class="msg">
+                            <label>
+                                <textarea class="area" id="message" name="Message" placeholder="Leave a message"></textarea>
+                            </label>
+                        </div>
+                        <div class="sendEmail">
+                            <button class="submit" type="submit" id="submit-button">Send</button>
+                        </div>
 
-            <div class="container3" id="container-form">
-                <form action="https://formspree.io/f/mgebdnza" method="POST">
-                    <p class="contact">Order Now!</p>
-                    <div class="login">
-                        <label>
-                            <input class="input" type="text" name="Name" placeholder="Name" required>
-                            <select class="input" name="Order" required>
-                                <option value="">Select an order</option>
-                                <option value="Siomai">Siomai</option>
-                                <option value="Siomai with rice">Siomai with rice</option>
-                                <option value="Hotdog">Hotdog</option>
-                            </select>
-                        </label>
-                        <label>
-                            <input class="input" type="number" name="Quantity" placeholder="Quantity" required>
-                            <input class="input" type="text" name="Address" placeholder="Address" required>
-                        </label>
-                        <label>
-                            <input class="input" type="number" name="Floor" placeholder="Floor" required>
-                            <input class="input" type="text" name="Room Sections Strand" placeholder="Room, Sections, and Strand"
-                                required>
-                        </label>
-                    </div>
-                    <div class="msg">
-                        <label>
-                            <textarea class="area" id="message" name="Message" placeholder="Leave a message"></textarea>
-                        </label>
-                    </div>
-                    <div class="sendEmail">
-                        <button class="submit" type="submit">Send</button>
-                    </div>
 
-                    <script>
-                        document.getElementById('container-form').addEventListener('submit', function () {
-                            location.reload();
-                        });
+                        <script>
+                            var submitButton = document.getElementById("submit-button");
+                            submitButton.addEventListener("click", function () {
+                                location.reload();
+                            });
 
-                        document.getElementById('container-form').addEventListener('submit', function (event) {
-                            event.preventDefault(); // Prevent form submission
-                            // Perform form validation and registration logic here
-                            // Replace this with your actual registration logic
-                            alert('Your order has been delivered.');
-                        });
-
-                    </script>
-
-                </form>
-            </div>
-
-            <section class="footer">
-                <div class="social">
-            
-                    <a class="IG" href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-            
-                    <a class="GITHUB" href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-            
-                    <a class="TWITTER" href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <p class="copy">DevStygian © 2023 | ALL RIGHTS RESERVED</p>
+                        </script>
+                    </form>
                 </div>
-            </section>
 
+
+
+                <section class="footer">
+                    <div class="credit">
+                        <p class="copy">DevStygian © 2023 | ALL RIGHTS RESERVED</p>
+                    </div>
+                </section>
     </div>
 </body>
 </html>

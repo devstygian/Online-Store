@@ -1,23 +1,29 @@
-//contact info
-src = "https://smtpjs.com/v3/smtp.js"
+// set the stock number dynamically
+var stockNumber = 50; // replace with your actual stock number
+var stockElement = document.querySelector('.stock');
+if (stockNumber > 0) {
+    stockElement.textContent = 'In stock: ' + stockNumber;
+} else {
+    stockElement.classList.add('out-of-stock');
+    stockElement.textContent = 'Out of stock';
+}
 
-function sendEmail() {
-    Email.send({
-        host: "smtp.gmail.com",
-        Username: "hackstygian@gmail.com",
-        Password: "alvarez2005",
-        To: 'joshuaalvarez547@gmail.com',
-        from: document.getElementById("email").value,
-        Subject: "This is the subject",
-        Body: "Name: " + document.getElementById("name").value
-            + "<br> order: " + document.getElementById("order").value
-            + "<br> Quantity: " + document.getElementById("Quantity").value
-            + "<br> Address: " + document.getElementById("Address").value
-            + "<br> Flor: " + document.getElementById("Flor").value
-            + "<br> Grade, Sections, and Strand: " + document.getElementById("Grade, Sections, and Strand").value
-            
-            + "<br> Message: " + document.getElementById("message").value
-    }).then(
-        message => alert("Message Sent Succesfully")
-    )
+// set the stock number dynamically
+var stockNumber = 50; // replace with your actual stock number
+var stockElement = document.querySelector('.stock1');
+if (stockNumber > 0) {
+    stockElement.textContent = 'In stock: ' + stockNumber;
+} else {
+    stockElement.classList.add('out-of-stock');
+    stockElement.textContent = 'Out of stock';
+}
+
+// set the stock number dynamically
+var stockNumber = 50; // replace with your actual stock number
+var stockElement = document.querySelector('.stock2');
+if (stockNumber > 0) {
+    stockElement.textContent = 'In stock: ' + stockNumber;
+} else {
+    stockElement.classList.add('out-of-stock');
+    stockElement.textContent = 'Out of stock';
 }
