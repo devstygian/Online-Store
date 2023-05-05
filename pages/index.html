@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siomai Dynasty</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="javascript" href="scrip.js" />
+    <script src="https://kit.fontawesome.com/f02a36f28e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-img">
+    <div id="Header" class="Main">
+    <header id="Header" class="head" >
+        <nav id="nav">
+        
+            <ul>
+                <li><a href="#banner"><i class="fa-sharp fa-solid fa-house"></i>  Home</a></li>
+
+                <li><a href="pages/menu.html"><i class="fa-solid fa-utensils"></i>  Menu</a></li>
+
+                <li><a href="#"><i class="fa-solid fa-address-card"></i>  About</a></li>
+
+                <li><a href="#container-form"><i class="fa-solid fa-envelope"></i>  Contact</a></li>
+            </ul>
+    </nav>
+            <!--
+        <div class="topnav" id="myTopnav">
+
+            <ul>
+                <li><a href="#banner"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
+            
+                <li><a href="pages/menu.html"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+            
+                <li><a href="#"><i class="fa-solid fa-address-card"></i> About</a></li>
+            
+                <li><a href="#container-form"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+
+
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+-->
+
+        <section class="banners"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 500);
+            })
+        </script>
+    </header>
+   
+        <section id="banner">
+            <div class="word1">
+                <h2>Siomai Dynasty Makes Everything Better.</h2>
+                <p>Delivering satiety to your special tummy</p>
+               
+                    <a class="learnMore" href="#learn" class="button large scrolly">Learn More</a>
+                
+            </div>
+        </section>
+</div>
+            
+            <section  >
+                <div class="container" id="learn"></div>
+                    <header class="major" style="text-align: center;">
+                        <h2>Siomai rice, Hotdog, and more</h2>
+                        <p >Most affordable siomai & siomai-rice in Narra! Together with our signature soy-chili-garlic sauce!</p>
+                        <p>From teacher's to student's our confections make for endless smiles and happy bellies. Whether your taste is<br />
+                            simple or you crave a twist on your old favorites, we've got something that'll make you go,<br />
+                            <strong>"Yummmmmmm."</strong>
+                        </p>
+                        <button class="btn-menu1"><a href="pages/menu.html"><i class="fa-solid fa-utensils"> View Menu</i></a></button>
+                    </header>
+                  
+            </section>
+            
+
+            <!-- CTA -->
+            <section id="custom-orders" class="order-box">
+                <h2>Order now.</h2>
+                <ul class="actions">
+                    <li><a href="#container-form" class="con1">Message us</a></li>
+                    <li><a href="tel:+970-216-9278" class="con2" >702-***-****</a></li>
+                </ul>
+            </section>
+
+                 <!--special events-->
+			<section id="special-events" class="wrapper style2">
+				<div class="container1">
+					<h2>Special Events</h2>
+				<p class="p1">Your special occasion is also special to us.  Here's how we do our part to add that little extra sweetness to your event:</p>
+					<div class="row gtr-uniform">
+						<div class="box-special">
+							<section>
+                                <div class="logo3"><i class="fa-solid fa-phone"></i></div>
+								<h3>We collaborate</h3>
+								<p>We work out the details with you so you get exactly what you bargain for.  We even set a quote up-front and offer packages to fit your budget.</p>
+							</section>
+						</div>
+						<div class="box-special">
+							<section>
+                                <div class="logo3"><i class="fa-solid fa-list-check"></i></div>
+								<h3>We prioritize you</h3>
+								<p>We work hard to fulfill your order accurately and always in time for your occasion so your sweets are as fresh as can be.</p>
+							</section>
+						</div>
+						<div class="box-special">
+							<section  >
+                               <div class="logo3"><i  class="fa-solid fa-truck"></i></div>
+								<h3>We deliver to you</h3>
+								<p>We take care of the rest so you are free to entertain guests or lounge in your sweatpants until your sweets reach your door.</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+                <div class="container3" id="container-form">
+                    <form action="https://formspree.io/f/mgebdnza" method="POST">
+                        <p class="contact">Order Now!</p>
+                        <div class="login">
+                            <label>
+                                <input class="input" type="text" name="Name" placeholder="Name" required>
+                                <select class="input" name="Order" required>
+                                    <option value="">Select an order</option>
+                                    <option value="Siomai">Siomai</option>
+                                    <option value="Siomai with rice">Siomai with rice</option>
+                                    <option value="Hotdog">Hotdog</option>
+                                </select>
+                            </label>
+                            <label>
+                                <input class="input" type="number" name="Quantity" placeholder="Quantity" required>
+                                <input class="input" type="text" name="Address" placeholder="Address" required>
+                            </label>
+                            <label>
+                                <input class="input" type="number" name="Floor" placeholder="Floor" required>
+                                <input class="input" type="text" name="Room Sections Strand" placeholder="Room, Sections, and Strand"
+                                    required>
+                            </label>
+                        </div>
+                        <div class="msg">
+                            <label>
+                                <textarea class="area" id="message" name="Message" placeholder="Leave a message"></textarea>
+                            </label>
+                        </div>
+                        <div class="sendEmail">
+                            <button class="submit" type="submit" id="submit-button">Send</button>
+                        </div>
+
+
+                        <script>
+                            var submitButton = document.getElementById("submit-button");
+                            submitButton.addEventListener("click", function () {
+                                location.reload();
+                            });
+
+                        </script>
+                    </form>
+                </div>
+
+
+
+                <section class="footer">
+                    <div class="credit">
+                        <p class="copy">DevStygian © 2023 | ALL RIGHTS RESERVED</p>
+                    </div>
+                </section>
+    </div>
+</body>
+</html>
