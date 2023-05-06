@@ -28,16 +28,22 @@
 
         <header id="Header" class="head" >
             <nav id="nav">
-                <ul>
+                <div class="openMenu"><i class="fa fa-bars"></i></div>
+                <ul class="mainMenu">
                     <li><a href="#banner"><i class="fa-sharp fa-solid fa-house"></i>  Home</a></li>
 
                     <li><a href="pages/menu.html"><i class="fa-solid fa-utensils"></i>  Menu</a></li>
 
-                    <li><a href="#container-form"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    <li><a href="#"><i class="fa-solid fa-address-card"></i> About</a></li>
 
                     <li><a href="#container-form"><i class="fa-solid fa-message"></i>  Feedback</a></li>
+
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+                    <span class="icons">
                 </ul>
         </nav>
+        <script src="./app.js"></script>
+
             <section class="banners"></section>
             <script type="text/javascript">
                 window.addEventListener("scroll", function () {
