@@ -113,6 +113,67 @@
 
  }
 }
+ @media only screen and (max-width: 380px) {
+     .head {
+         padding: 20px 20px;
+         font-size: 14px;
+     }
+
+     .head ul {
+         flex-direction: row;
+     }
+
+     .head ul li {
+         margin-bottom: 10px;
+     }
+
+     .head ul li a {
+         margin: 0;
+         padding: 0px 2.5px;
+     }
+
+     .head ul li a:hover {
+        color: #ff5e00;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        background: none;
+     }
+     .head.sticky ul li a:hover{
+        color: red;
+        border: none;
+        border-radius: 0;
+        padding: 5px 1px;
+        background:none;
+    }
+     .word1 {
+         padding-top: 5px;
+         color: #ffffff;
+
+     }
+         .major .boldword{
+            font-weight: bolder;
+            font-size: 30px;
+            color: #000000;
+            padding-bottom: 20px;
+        
+
+         }
+         .major .text{
+            color: rgb(8, 8, 8);
+            font-size: 16px;
+            text-align: center;
+            border: 0;
+            word-spacing: normal;
+            line-height: 1.5rem;
+         }
+        .copy {
+            margin-top: 50px;
+            color: #ffffff;
+            
+            font-size: 15px;
+        }
+ }
 
 .background-img {
     position: relative;
