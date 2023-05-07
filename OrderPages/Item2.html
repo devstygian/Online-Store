@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siomai Dynasty</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png">
+<link rel="manifest" href="/image/site.webmanifest">
+
+<link rel="stylesheet" href="Item2.css" />
+
+<script src="https://kit.fontawesome.com/f02a36f28e.js" crossorigin="anonymous"></script>
+
+
+
+<head>
+    <title>Menu List</title>
+</head>
+
+<body>
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#2">Siomai</a></li>
+            <li><a href="#1">Siomai with rice</a></li>
+            <li><a href="#3">Hotdog</a></li>
+            <li><a href="#4">Drinks</a></li>
+        </ul>
+
+
+        <div class="container3" id="container-form">
+
+            <form action="https://formspree.io/f/xwkjyygo" method="POST">
+
+
+                <p class="contact">Checkout</p>
+                <div class="Order-box">
+
+                    <section>
+                        <div class="item">
+                            <img src="../OrderPages/siomai-250g-2.png" alt="siomai-rice.img" id="1">
+                            <h3>Siomai</h3>
+                            <span>Price:<span class="prices">₱5.00</span></span>
+                            <span class="price">₱5.00</span>
+                            <span>Stock: <span id="stock-count">50</span></span>
+                            <span>Good for:<span>1 person</span></span>
+                            <span>Siomai:<span>1 pcs</span></span>
+
+                            <h5>Delivery Fee for outside the school:</h5>
+                            <span class="discount">₱45.00</span>
+                            <h5>Payment Method</h5>
+                            <span class="discount">Cash on Delivery</span>
+                        </div>
+                    </section>
+                    <label>
+                        <input class="input" type="text" name="Name" placeholder="Full Name" required>
+                    </label>
+                    <label>
+                        <input class="input" type="number" name="Quantity" id="stock-count" placeholder="Quantity"
+                            required>
+                        <input class="input" type="text" name="Address" placeholder="Address" required>
+                    </label>
+                    <label>
+
+
+                        <select class="input" name="Siomai Flavor" placeholder="Floor" required>
+
+                            <option value="Siomai">Floor</option>
+                            <option value="">First / Ground floor,</option>
+                            <option value="">Second floor</option>
+                            <option value="Siomai">Third floor</option>
+                        </select>
+
+                        <input class="input" type="text" name="Room Sections Strand"
+                            placeholder="Grade, Sections, and Strand." required>
+                    </label>
+                    <label>
+                        <select class="input" name="Siomai Flavor" required>
+                            <option value="">Select a flavor</option>
+                            <option value="">Chicken flavor</option>
+                            <option value="Siomai">Pork flavor</option>
+                        </select>
+
+                        <select class="input" name="Time of delivery" required>
+                            <option value="">Time of Delivery</option>
+                            <option value="">Right away</option>
+                            <option value="">8:00am</option>
+                            <option value="">8:30am</option>
+                            <option value="">9:00am</option>
+                            <option value="">9:30am</option>
+                            <option value="">10:00am</option>
+                            <option value="">10:30am</option>
+                            <option value="">11:00am</option>
+                            <option value="">11:30am</option>
+                            <option value="">12:00noon</option>
+                            <option value="">12:30noon</option>
+                            <option value="">1:00pm</option>
+                            <option value="">1:30pm</option>
+                            <option value="">2:00am</option>
+                            <option value="">2:30am</option>
+                            <option value="">3:00am</option>
+                            <option value="">3:30am</option>
+                            <option value="">4:00am</option>
+                            <option value="">4:30am</option>
+                        </select>
+
+                    </label>
+                </div>
+                <div class="msg">
+                    <label>
+                        <textarea class="area" id="message" name="Message" placeholder="Additional notes"></textarea>
+                    </label>
+                </div>
+                <div class="sendEmail">
+                    <button class="submit" type="submit" id="submit-button">Place Order</button>
+                </div>
+
+                <link rel="javascript" href="/pages/scrip2.js" />
+
+            </form>
+        </div>
+
+
+
+
+        <section class="back-btn" id="backbtn">
+            <a href="../pages/menu.html" title="HomePage"><i class="fa-solid fa-arrow-left"></i></a>
+        </section>
+
+        <section class="footer">
+            <div class="credit">
+                <p class="copy">DevStygian © 2023 | ALL RIGHTS RESERVED</p>
+            </div>
+        </section>
+
+</body>
+
+</html>

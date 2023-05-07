@@ -1,0 +1,305 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+
+ body {
+     background: hsl(32, 100%, 89%);
+     height: 100%;
+ }
+
+ header {
+
+     background-color: #333;
+     color: #fff;
+     padding: 10px;
+     text-align: center;
+
+
+
+ }
+
+ nav {
+     background-color: #f2f2f2;
+     padding: 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 20px;
+ }
+
+ nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ nav li {
+     display: inline-block;
+     margin: 0 10px;
+ }
+
+ nav a {
+     color: #333;
+     text-decoration: none;
+     padding: 5px 10px;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+
+ nav a:hover {
+     background-color: #333;
+     color: #fff;
+ }
+
+ @media (max-width: 768px) {
+     nav {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     nav li {
+         display: block;
+         margin: 10px 0;
+     }
+ }
+
+ .item {
+     width: 400px;
+     margin: 80px;
+     box-shadow: 0 0 10px rgba(241, 53, 141, 0.562);
+     border-radius: 5px;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     /* Align text to the left */
+     transition: transform 0.3s ease;
+     margin-top: 0px;
+     margin-bottom: 50px;
+     background-color: antiquewhite;
+     float: left;
+ }
+
+ @media (max-width: 768px) {
+     .item {
+         width: 90%;
+         margin: 20px auto;
+     }
+ }
+
+ .item img {
+     width: 100%;
+     max-height: 250px;
+ }
+
+ .item h3,
+ h5 {
+     margin: 10px;
+     padding-left: 15px;
+     text-align: left;
+     font-weight: bold;
+     /* Align heading to the left */
+ }
+
+ .item span {
+     margin: 10px;
+     line-height: 0.5;
+     padding-left: 15px;
+     text-align: left;
+     font-size: 18px;
+     font-weight: normal;
+     /* Align span to the left */
+ }
+
+ .item {
+     position: relative;
+ }
+
+ .price {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     font-size: 1.5em;
+     display: none;
+     padding: 10px 10px;
+     background-color: #f2f2f2;
+     border: #000000 1px solid;
+     border-radius: 50px;
+ }
+
+ .item:hover .price {
+     display: block;
+ }
+
+
+ .container3 {
+
+
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 10px;
+
+     padding: 40px;
+     padding-top: 40px;
+     padding-bottom: 100px;
+     justify-content: right;
+     display: flex;
+     text-align: right;
+     background-color: #fcedbb;
+
+
+ }
+
+ .contact {
+     text-align: center;
+     font-weight: bolder;
+     font-size: 50px;
+     margin-top: 0%;
+     margin-bottom: 10%;
+     color: #130035;
+
+ }
+
+ .input,
+ .msg .area {
+     width: 100%;
+     padding: 3%;
+     box-sizing: border-box;
+     margin-bottom: 25px;
+     border: 2px solid #3c7979;
+     font-size: 18px;
+     border-radius: 5px;
+     outline: none;
+     transform: all 0.5s ease;
+     background-color: transparent;
+     color: rgb(0, 0, 0);
+     /* Add box shadow on the left side */
+     box-shadow: -20px -5px 10px rgba(0, 0, 0, 0.349);
+ }
+
+ .Order-box .input {
+     width: 100%;
+     margin-left: 0%;
+ }
+
+ .Order-box .input:last-child {
+     margin-right: 0;
+
+
+ }
+
+ .msg .area {
+     height: 200px;
+
+
+ }
+
+ .sendEmail {
+     text-align: center;
+     margin-left: 0;
+ }
+
+ .submit {
+     padding: 10px 20px;
+     width: 50%;
+     background: #000000;
+     margin-top: 5%;
+     margin-right: 20px;
+     line-height: 180%;
+     color: rgb(255, 255, 255);
+     border: 0;
+     font-size: 100%;
+     font-weight: bold;
+     outline: none;
+     text-align: center;
+     border-radius: 50px;
+     float: right;
+ }
+
+ .submit:hover {
+     background: rgb(24, 24, 24);
+     color: #ffffff;
+ }
+
+ .input:focus,
+ .msg .area:focus {
+     border: 2px solid #ff0000;
+ }
+
+ /* Media Queries for Responsive Adjustments */
+ @media only screen and (min-width: 768px) {
+
+     .input,
+     .msg .area,
+     .Order-box .input {
+         width: 50%;
+         float: right;
+         display: flex;
+     }
+
+     .Order-box .input:last-child {
+         margin-right: 4%;
+     }
+
+     .copy {
+
+         font-weight: bold;
+         font-size: 18px;
+         color: #000000;
+         background-color: #fcedbb;
+     }
+
+ }
+
+ @media only screen and (min-width: 400px) {
+
+     .submit {
+         color: #ffffff;
+         float: none;
+     }
+
+     .copy {
+
+         font-weight: bold;
+         font-size: 18px;
+         color: #000000;
+         background-color: #fcedbb;
+     }
+ }
+
+ .back-btn {
+     position: fixed;
+     top: 85%;
+     right: 50px;
+     z-index: 9999;
+
+ }
+
+ .back-btn a {
+     border: #00ffea 1px solid;
+     background-color: #000000;
+     padding: 10px 10px;
+     border-radius: 50%;
+     text-decoration: none;
+     margin-right: -90%;
+
+ }
+
+ .back-btn i {
+     font-size: 15px;
+     color: #ffffff;
+     font-weight: bolder;
+     margin-right: 5px;
+ }
+
+ .back-btn a:hover {
+
+     background-color: #000000;
+ }
+
+ .back-btn i:hover {
+     color: #ffffff;
+ }
