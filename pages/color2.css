@@ -63,82 +63,93 @@ nav a:hover {
         margin: 10px 0;
     }
 }
+section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
- section {
-     padding: 20px;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
- }
+.item {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(241, 53, 141, 0.562);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align text to the left */
+    transition: transform 0.3s ease;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: antiquewhite;
+}
 
- .item {
-     width: 300px;
-     margin: 20px;
-     box-shadow: 0 0 10px rgba(241, 53, 141, 0.562);
-     border-radius: 5px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: column;
-     align-items: last baseline;
-     transition: transform 0.3s ease;
-     margin-top: 150px;
-     margin-bottom: 50px;
-     background-color: antiquewhite;
+@media (max-width: 768px) {
+    .item {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
 
- }
+.item:hover {
+    transform: translateY(-10px);
+}
 
- .item:hover {
-     transform: translateY(-10px);
- }
+.item img {
+    width: 100%;
+    max-height: 250px;
+}
 
- .item img {
-     width: 300px;
-     height: 250px;
- }
-
- .item h3 {
-     margin: 10px;
-     padding-left: 15px;
- }
-
- .item span {
-     margin: 10px;
-     line-height: 0.5;
+.item h3 {
+    margin: 10px;
     padding-left: 15px;
- }
+    text-align: left;
+    /* Align heading to the left */
+}
 
- .item {
-     position: relative;
- }
+.item span {
+    margin: 10px;
+    line-height: 0.5;
+    padding-left: 15px;
+    text-align: left;
+    /* Align span to the left */
+}
 
- .price {
-     position: absolute;
-     top: 10px;
-     right: 10px;
-     font-size: 1.5em;
-     display: none;
+.item {
+    position: relative;
+}
+
+.price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    display: none;
     padding: 10px 10px;
-     background-color: #f2f2f2;
-     border: #000000 1px solid;
-     border-radius: 50px;
-    
- }
+    background-color: #f2f2f2;
+    border: #000000 1px solid;
+    border-radius: 50px;
+}
 
+.item:hover .price {
+    display: block;
+}
 
- .item:hover .price {
-     display: block;
- }
+.item:hover .price1 {
+    display: block;
+}
 
- .item:hover .price1 {
-     display: block;
- }
-
- .item:hover .price2 {
-     display: block;
- }
-
+.item:hover .price2 {
+    display: block;
+}
+.stocks {
+    text-align: left;
+    color: #ff0000;
+}
 
 .container3 {
 

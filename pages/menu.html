@@ -11,7 +11,7 @@
         <link rel="manifest" href="/image/site.webmanifest">
 
     <link rel="stylesheet" href="color2.css" />
-    <link rel="javascript" href="scrip2.js" />
+    
     <script src="https://kit.fontawesome.com/f02a36f28e.js" crossorigin="anonymous"></script>
 
    
@@ -37,9 +37,11 @@
             <img src="siomai-with-rice.png" alt="siomai-rice" id="1">
             <h3 >Siomai-with-rice</h3>
            
-                <span class="prices">Price ₱50.00</span>
+                <span>Price:<span class="prices">₱50.00</span></span>
                 <span class="price">₱50.00</span>
-                <span class="stock">Stacks: 50</span>
+               
+                <span>Stock: <span id="stock-count">50</span></span>
+                
                 <span class="discount">5% off for 5 pcs</span>
             
         </div>
@@ -48,9 +50,9 @@
             <img src="siomai-250g-2.png" alt="sioami" id="2">
             <h3 >Siomai</h3>
             
-                <span class="prices">Price ₱5.00</span>
+                <span>Price:<span class="prices">₱5.00</span></span>
                 <span class="price">₱5.00</span>
-                <span class="stock">Stocks: 50</span>
+                <span>Stock: <span id="stock-count">50</span></span>
            
         </div>
         
@@ -58,16 +60,16 @@
             <img src="Basic-Hot-Dogs.jpg" alt="Hot-dog" id="3">
             <h3 >Hotdog</h3>
      
-                <span class="prices">Price ₱25.00</span>
+                <span>Price:<span class="prices">₱25.00</span></span>
                 <span class="price">₱25.00</span>
-                <span class="stock">Stocks: 50</span>
+                <span>Stock: <span id="stock-count">10</span></span>
            
         </div>
         
     </section>
    
 
-
+<!--
 <div class="container3" id="container-form">
     <form action="https://formspree.io/f/mgebdnza" method="POST">
         <p class="contact">Order Now!</p>
@@ -82,7 +84,7 @@
                 </select>
             </label>
             <label>
-                <input class="input" type="number" name="Quantity" placeholder="Quantity" required>
+                <input class="input" type="number" name="Quantity" id="stock-count" placeholder="Quantity" required>
                 <input class="input" type="text" name="Address" placeholder="Address" required>
             </label>
             <label>
@@ -131,10 +133,12 @@
             <button class="submit" type="submit" id="submit-button">Send</button>
         </div>
 
-
+<link rel="javascript" href="/pages/scrip2.js" />
         
     </form>
 </div>
+
+-->
 
 
     <section class="back-btn" id="backbtn">
