@@ -8,6 +8,22 @@
 body {
     min-width: 300px;
     /* Set the minimum width to 300 pixels */
+    background-color: #0000003a;
+}
+
+.logo img {
+    width: 150px;
+    /* Adjust the width of the logo as needed */
+    height: 90px;
+    /* Adjust the height of the logo as needed */
+
+}
+
+@media only screen and (max-width: 798px) {
+    .logo {
+        display: none;
+        /* Hide the logo */
+    }
 }
 
 nav {
@@ -18,7 +34,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    background-color: #000000;
+    background-color: #0000009c;
 
 
 }
@@ -31,6 +47,7 @@ nav .mainMenu {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-left: 23.5%;
 
 }
 
@@ -468,7 +485,7 @@ a {
     justify-content: center;
     display: flex;
     text-align: center;
-    background-color: #fab06a88;
+    background-color: #ffffffc5;
 }
 
 .contact {

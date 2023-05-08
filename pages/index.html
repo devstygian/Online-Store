@@ -1,169 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Siomai Dynasty</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/site.webmanifest">
+
     <link rel="stylesheet" href="main.css" />
-    <link rel="javascript" href="../scrip.js" />
+
+    <link rel="javascript" href="scrip.js" />
+
     <script src="https://kit.fontawesome.com/f02a36f28e.js" crossorigin="anonymous"></script>
+
+    <meta property="og:title" content="Siomai Dynasty" />
+    <meta property="og:image" content="https://i.ibb.co/5rTz8Rb/Siomai-Dynasty-Final-Logo.png" />
+    <meta property="og:description" content="Order Now!" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
 </head>
+
 <body>
     <div class="background-img">
-    <div id="Header" class="Main">
-    <header id="Header" class="head" >
-        <nav id="nav">
-        
-            <ul>
-                <li><a href="#banner"><i class="fa-sharp fa-solid fa-house"></i>  Home</a></li>
+        <div id="Header" class="Main">
 
-                <li><a href="pages/menu.html"><i class="fa-solid fa-utensils"></i>  Menu</a></li>
+            <header id="Header" class="head">
+                <nav id="nav">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="Siomai_Dynasty04-removebg-preview.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="openMenu"><i class="fa fa-bars"></i></div>
+                    <ul class="mainMenu">
+                        <li><a href="#banner"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
 
-                <li><a href="#"><i class="fa-solid fa-address-card"></i>  About</a></li>
+                        <li><a href="pages/menu.html"><i class="fa-solid fa-utensils"></i> Menu</a></li>
 
-                <li><a href="#container-form"><i class="fa-solid fa-envelope"></i>  Contact</a></li>
-            </ul>
-    </nav>
- 
-        <section class="banners"></section>
-        <script type="text/javascript">
-            window.addEventListener("scroll", function () {
-                var header = document.querySelector("header");
-                header.classList.toggle("sticky", window.scrollY > 500);
-            })
-        </script>
-    </header>
-   
-        <section id="banner">
-            <div class="word1">
-                <h2>Siomai Dynasty Makes Everything Better.</h2>
-                <p>Delivering satiety to your special tummy</p>
-               
+                        <li><a href="#"><i class="fa-solid fa-address-card"></i> About</a></li>
+
+                        <li><a href="#container-form"><i class="fa-solid fa-message"></i> Feedback</a></li>
+
+                        <div class="closeMenu"><i class="fa fa-times"></i></div>
+                        <span class="icons">
+                    </ul>
+                </nav>
+                <script src="./app.js"></script>
+
+                <section class="banners"></section>
+                <script type="text/javascript">
+                    window.addEventListener("scroll", function () {
+                        var header = document.querySelector("header");
+                        header.classList.toggle("sticky", window.scrollY > 300);
+                    })
+                </script>
+            </header>
+
+
+            <section id="banner">
+                <div class="word1">
+                    <h2>Siomai Dynasty Makes Everything Better.</h2>
+                    <p>Delivering satiety to your special tummy</p>
+
                     <a class="learnMore" href="#learn" class="button large scrolly">Learn More</a>
-                
+
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <div class="container" id="learn"></div>
+            <header class="major" style="text-align: center;">
+                <h2 class="boldword">Siomai rice, Hotdog, and more</h2>
+                <p class="text">Most affordable siomai & siomai-rice in Narra! Together with our signature
+                    soy-chili-garlic sauce!</p>
+                <p class="text">From teacher's to student's our confections make for endless smiles and happy bellies.
+                    Whether your taste is<br />
+                    simple or you crave a twist on your old favorites, we've got something that'll make you go,<br />
+                    <strong>"Yummmmmmm."</strong>
+                </p>
+                <button class="btn-menu1"><a href="pages/menu.html"><i class="fa-solid fa-utensils"> View
+                            Menu</i></a></button>
+            </header>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section id="custom-orders" class="order-box">
+            <h2>Siomai Dynasty</h2>
+            <ul class="actions">
+                <li><a href="pages/menu.html" class="con1"><i class="fa-solid fa-cart-shopping"></i> Order Now!</a></li>
+                <li><a href="tel:+970-216-9278" class="con2">0970-***-****</a></li>
+            </ul>
+        </section>
+
+        <!--special events-->
+        <section id="special-events" class="wrapper style2">
+            <div class="container1">
+                <h2>Special Events</h2>
+                <p class="p1">Your special occasion is also special to us. Here's how we do our part to add that little
+                    extra sweetness to your event:</p>
+                <div class="row gtr-uniform">
+                    <div class="box-special">
+                        <section>
+                            <div class="logo3"><i class="fa-solid fa-phone"></i></div>
+                            <h3>We collaborate</h3>
+                            <p>We work out the details with you so you get exactly what you bargain for. We even set a
+                                quote up-front and offer packages to fit your budget.</p>
+                        </section>
+                    </div>
+                    <div class="box-special">
+                        <section>
+                            <div class="logo3"><i class="fa-solid fa-list-check"></i></div>
+                            <h3>We prioritize you</h3>
+                            <p>We work hard to fulfill your order accurately and always in time for your occasion so
+                                your sweets are as fresh as can be.</p>
+                        </section>
+                    </div>
+                    <div class="box-special">
+                        <section>
+                            <div class="logo3"><i class="fa-solid fa-truck"></i></div>
+                            <h3>We deliver to you</h3>
+                            <p>We take care of the rest so you are free to entertain guests or lounge in your sweatpants
+                                until your sweets reach your door.</p>
+                        </section>
+                    </div>
+                </div>
             </div>
         </section>
-</div>
-            
-            <section  >
-                <div class="container" id="learn"></div>
-                    <header class="major" style="text-align: center;">
-                        <h2>Siomai rice, Hotdog, and more</h2>
-                        <p >Most affordable siomai & siomai-rice in Narra! Together with our signature soy-chili-garlic sauce!</p>
-                        <p>From teacher's to student's our confections make for endless smiles and happy bellies. Whether your taste is<br />
-                            simple or you crave a twist on your old favorites, we've got something that'll make you go,<br />
-                            <strong>"Yummmmmmm."</strong>
-                        </p>
-                        <button class="btn-menu1"><a href="pages/menu.html"><i class="fa-solid fa-utensils"> View Menu</i></a></button>
-                    </header>
-                  
-            </section>
-            
-
-            <!-- CTA -->
-            <section id="custom-orders" class="order-box">
-                <h2>Order now.</h2>
-                <ul class="actions">
-                    <li><a href="#container-form" class="con1">Message us</a></li>
-                    <li><a href="tel:+970-216-9278" class="con2" >702-***-****</a></li>
-                </ul>
-            </section>
-
-                 <!--special events-->
-			<section id="special-events" class="wrapper style2">
-				<div class="container1">
-					<h2>Special Events</h2>
-				<p class="p1">Your special occasion is also special to us.  Here's how we do our part to add that little extra sweetness to your event:</p>
-					<div class="row gtr-uniform">
-						<div class="box-special">
-							<section>
-                                <div class="logo3"><i class="fa-solid fa-phone"></i></div>
-								<h3>We collaborate</h3>
-								<p>We work out the details with you so you get exactly what you bargain for.  We even set a quote up-front and offer packages to fit your budget.</p>
-							</section>
-						</div>
-						<div class="box-special">
-							<section>
-                                <div class="logo3"><i class="fa-solid fa-list-check"></i></div>
-								<h3>We prioritize you</h3>
-								<p>We work hard to fulfill your order accurately and always in time for your occasion so your sweets are as fresh as can be.</p>
-							</section>
-						</div>
-						<div class="box-special">
-							<section  >
-                               <div class="logo3"><i  class="fa-solid fa-truck"></i></div>
-								<h3>We deliver to you</h3>
-								<p>We take care of the rest so you are free to entertain guests or lounge in your sweatpants until your sweets reach your door.</p>
-							</section>
-						</div>
-					</div>
-				</div>
-			</section>
 
 
-                <div class="container3" id="container-form" name="container-form">
-                    <form action="https://formspree.io/f/mgebdnza" method="POST">
-                        <p class="contact">Order Now!</p>
-                        <div class="login">
-                            <label>
-                                <input class="input" type="text" name="Name (optional)" placeholder="Name (Optional)" >
-                                <select class="input" name="Type Of order" required>
-                                    <option value="">Type Of order</option>
-                                    <option value="Siomai">Siomai</option>
-                                    <option value="Siomai with rice">Siomai with rice</option>
-                                    <option value="Hotdog">Hotdog</option>
-                                </select>
-                            </label>
-                            <label>
-                                <input class="input" type="number" name="Quantity" placeholder="Quantity" required>
-                                <input class="input" type="text" name="Address" placeholder="Address" required>
-                            </label>
-                            <label>
-                                <input class="input" type="number" name="Floor" placeholder="Floor" required>
-                                <input class="input" type="text" name="Room Sections Strand" placeholder="Room, Sections, and Strand"
-                                    required>
-                            </label>
-                        </div>
-                        <div class="msg">
-                            <label>
-                                <textarea class="area" id="message" name="Message" placeholder="Leave a message"></textarea>
-                            </label>
-                        </div>
-                        <div class="sendEmail">
-                            <button class="submit" type="submit" id="submit-button">Send</button>
-                        </div>
-
-                    </form>
+        <div class="container3" id="container-form">
+            <form action="https://formspree.io/f/mqkongew" method="POST">
+                <p class="contact">Feedback Form</p>
+                <div class="login">
+                    <label>
+                        <input class="input" type="text" name="Name (Optional)" placeholder="Name (Optional)">
+                        <select class="input" name="Tyoe Of Order" required>
+                            <option class="input" value="Type Of Order">Select an order</option>
+                            <option value="Siomai">Siomai</option>
+                            <option value="Siomai with rice">Siomai with rice</option>
+                            <option value="Hotdog">Hotdog</option>
+                        </select>
+                    </label>
+                    <label>
+                        <input class="input" type="number" name="Quantity" placeholder="Quantity" required>
+                        <input class="input" type="text" name="Address" placeholder="Address" required>
+                    </label>
+                    <label>
+                        <input class="input" type="number" name="Floor" placeholder="Floor" required>
+                        <input class="input" type="text" name="Grade, Sections  and Strand"
+                            placeholder="Grade, Sections, and Strand" required>
+                    </label>
                 </div>
+                <div class="msg">
+                    <label>
+                        <textarea class="area" id="message" name="Message"
+                            placeholder="Let us hear your feedback"></textarea>
+                    </label>
+                </div>
+                <div class="sendEmail">
+                    <button class="submit" type="submit" id="submit-button">Send</button>
+                </div>
+            </form>
 
-                    <script>
-                        window.onbeforeunload = () => {
-                            for (const form of document.getElementsByTagName('form')) {
-                                form.reset();
-                            }
-                        }
-                    </script>
+        </div>
 
-                <section class="footer">
-                    <div class="social">
-                    
-                        <a class="IG" href="https://www.instagram.com/_forsvinde_/">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    
-                        <a class="GITHUB" href="https://github.com/devstygian">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    
-                        <a class="TWITTER" href="https://twitter.com/lilstygian">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        
-                        <p class="copy">DevStygian © 2023 | ALL RIGHTS RESERVED</p>
-                    </div>
-                </section>
+        <script>
+            window.onbeforeunload = () => {
+                for (const form of document.getElementsByTagName('form')) {
+                    form.reset();
+                }
+            }
+        </script>
+
+        <section class="footer">
+            <div class="social">
+
+                <a class="IG" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a class="GITHUB" href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a class="TWITTER" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <p class="copy">DevStygian © 2023 | ALL RIGHTS RESERVED</p>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>
