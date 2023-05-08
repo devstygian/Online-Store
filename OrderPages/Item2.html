@@ -68,12 +68,10 @@
                     <label>
 
 
-                        <select class="input" name="Siomai Flavor" placeholder="Floor" required>
-
-                            <option value="Siomai">Floor</option>
-                            <option value="">First / Ground floor,</option>
-                            <option value="">Second floor</option>
-                            <option value="Siomai">Third floor</option>
+                        <select class="input" name="Siomai Flavor" required>
+                            <option value="">Select a flavor</option>
+                            <option value="">Chicken flavor</option>
+                            <option value="Siomai">Pork flavor</option>
                         </select>
 
                         <input class="input" type="text" name="Room Sections Strand"
@@ -129,7 +127,13 @@
         </div>
 
 
-
+        <script>
+            window.onbeforeunload = () => {
+                for (const form of document.getElementsByTagName('form')) {
+                    form.reset();
+                }
+            }
+        </script>
 
         <section class="back-btn" id="backbtn">
             <a href="../pages/menu.html" title="HomePage"><i class="fa-solid fa-arrow-left"></i></a>

@@ -26,39 +26,7 @@
                 <li><a href="#container-form"><i class="fa-solid fa-envelope"></i>  Contact</a></li>
             </ul>
     </nav>
-            <!--
-        <div class="topnav" id="myTopnav">
-
-            <ul>
-                <li><a href="#banner"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
-            
-                <li><a href="pages/menu.html"><i class="fa-solid fa-utensils"></i> Menu</a></li>
-            
-                <li><a href="#"><i class="fa-solid fa-address-card"></i> About</a></li>
-            
-                <li><a href="#container-form"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-            </ul>
-        
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-
-
-
-
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
--->
-
+ 
         <section class="banners"></section>
         <script type="text/javascript">
             window.addEventListener("scroll", function () {
@@ -135,14 +103,14 @@
 			</section>
 
 
-                <div class="container3" id="container-form">
+                <div class="container3" id="container-form" name="container-form">
                     <form action="https://formspree.io/f/mgebdnza" method="POST">
                         <p class="contact">Order Now!</p>
                         <div class="login">
                             <label>
-                                <input class="input" type="text" name="Name" placeholder="Name" required>
-                                <select class="input" name="Order" required>
-                                    <option value="">Select an order</option>
+                                <input class="input" type="text" name="Name (optional)" placeholder="Name (Optional)" >
+                                <select class="input" name="Type Of order" required>
+                                    <option value="">Type Of order</option>
                                     <option value="Siomai">Siomai</option>
                                     <option value="Siomai with rice">Siomai with rice</option>
                                     <option value="Hotdog">Hotdog</option>
@@ -167,18 +135,16 @@
                             <button class="submit" type="submit" id="submit-button">Send</button>
                         </div>
 
-
-                        <script>
-                            var submitButton = document.getElementById("submit-button");
-                            submitButton.addEventListener("click", function () {
-                                location.reload();
-                            });
-
-                        </script>
                     </form>
                 </div>
 
-
+                    <script>
+                        window.onbeforeunload = () => {
+                            for (const form of document.getElementsByTagName('form')) {
+                                form.reset();
+                            }
+                        }
+                    </script>
 
                 <section class="footer">
                     <div class="social">

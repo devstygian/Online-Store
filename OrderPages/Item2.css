@@ -203,7 +203,7 @@
  }
 
  .submit {
-     padding: 10px 20px;
+     padding: 10px 5px;
      width: 50%;
      background: #000000;
      margin-top: 5%;
@@ -244,15 +244,23 @@
          margin-right: 4%;
      }
 
-     .copy {
+ }
 
-         font-weight: bold;
-         font-size: 18px;
-         color: #000000;
-         background-color: #fcedbb;
-     }
+ .copy {
+
+
+     font-weight: bold;
+     font-size: 15px;
+     color: #000000;
+     padding: 20px 10px;
+     margin: 0;
+     float: none;
 
  }
+
+
+
+
 
  @media only screen and (min-width: 400px) {
 
@@ -263,23 +271,48 @@
 
      .copy {
 
+
          font-weight: bold;
          font-size: 18px;
          color: #000000;
-         background-color: #fcedbb;
+         padding: 20px 10px;
+         margin: 0;
+         float: none;
+
+     }
+ }
+
+ @media only screen and (min-width: 300px) {
+
+     .submit {
+         color: #ffffff;
+         float: none;
+     }
+
+
+     .copy {
+
+
+         font-weight: bold;
+         font-size: 15px;
+         color: #000000;
+         padding: 20px 10px;
+         margin: 0;
+         float: none;
+
      }
  }
 
  .back-btn {
      position: fixed;
-     top: 85%;
+     top: 90%;
      right: 50px;
      z-index: 9999;
 
  }
 
  .back-btn a {
-     border: #00ffea 1px solid;
+     border: #00ffbf 2px solid;
      background-color: #000000;
      padding: 10px 10px;
      border-radius: 50%;
@@ -293,6 +326,7 @@
      color: #ffffff;
      font-weight: bolder;
      margin-right: 5px;
+     text-align: center;
  }
 
  .back-btn a:hover {
@@ -302,4 +336,26 @@
 
  .back-btn i:hover {
      color: #ffffff;
+ }
+
+ .back-btn {
+     position: fixed;
+     top: 85%;
+     right: 50px;
+     z-index: 9999;
+     animation: floating 3s ease-in-out infinite;
+ }
+
+ @keyframes floating {
+     0% {
+         transform: translateY(0);
+     }
+
+     50% {
+         transform: translateY(-20px);
+     }
+
+     100% {
+         transform: translateY(0);
+     }
  }

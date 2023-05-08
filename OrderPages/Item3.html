@@ -121,7 +121,13 @@
         </div>
 
 
-
+        <script>
+            window.onbeforeunload = () => {
+                for (const form of document.getElementsByTagName('form')) {
+                    form.reset();
+                }
+            }
+        </script>
 
         <section class="back-btn" id="backbtn">
             <a href="../pages/menu.html" title="HomePage"><i class="fa-solid fa-arrow-left"></i></a>

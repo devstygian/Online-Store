@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="main.css" />
   
+    <link rel="javascript" href="scrip.js" />
+
     <script src="https://kit.fontawesome.com/f02a36f28e.js" crossorigin="anonymous"></script>
 
     <meta property="og:title" content="Siomai Dynasty" />
@@ -84,8 +86,8 @@
             <section id="custom-orders" class="order-box">
                 <h2>Siomai Dynasty</h2>
                 <ul class="actions">
-                    <li><a href="pages/menu.html" class="con1">Order Now!</a></li>
-                    <li><a href="tel:+970-216-9278" class="con2" >702-***-****</a></li>
+                    <li><a href="pages/menu.html" class="con1"><i class="fa-solid fa-cart-shopping"></i> Order Now!</a></li>
+                    <li><a href="tel:+970-216-9278" class="con2" >0970-***-****</a></li>
                 </ul>
             </section>
 
@@ -126,9 +128,9 @@
                         <p class="contact">Feedback Form</p>
                         <div class="login">
                             <label>
-                                <input class="input" type="text" name="Name" placeholder="Name" required>
-                                <select class="input" name="Order" required>
-                                    <option class="input" value="">Select an order</option>
+                                <input class="input" type="text" name="Name (Optional)" placeholder="Name (Optional)" >
+                                <select class="input" name="Tyoe Of Order" required>
+                                    <option class="input" value="Type Of Order">Select an order</option>
                                     <option value="Siomai">Siomai</option>
                                     <option value="Siomai with rice">Siomai with rice</option>
                                     <option value="Hotdog">Hotdog</option>
@@ -140,7 +142,7 @@
                             </label>
                             <label>
                                 <input class="input" type="number" name="Floor" placeholder="Floor" required>
-                                <input class="input" type="text" name="Room Sections Strand" placeholder="Room, Sections, and Strand"
+                                <input class="input" type="text" name="Grade, Sections  and Strand" placeholder="Grade, Sections, and Strand"
                                     required>
                             </label>
                         </div>
@@ -155,8 +157,14 @@
                     </form>
                   
                 </div>
-                    <link rel="javascript" href="scrip.js" />
-
+                   
+                    <script>
+                        window.onbeforeunload = () => {
+                                for (const form of document.getElementsByTagName('form')) {
+                                    form.reset();
+                                }
+                            }
+                    </script>
 
                 <section class="footer">
                     <div class="social">
