@@ -4,179 +4,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/*
-.head {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 90px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: inline-block;
-    font-size: 20px;
-    
-}
-
-.head ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-   
-}
-
-.head ul li{
-    position: relative;
-    list-style: none;
-    
-}
-
-.head ul li a{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #ff5e00;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
-    font-weight: bold;
-}
-.head ul li a:hover {
-    color: rgb(255, 255, 255);
-    border: #ffffff 3px solid;
-    border-radius: 30px;
-    padding: 5px 10px;
-    background: #ff2600;
-}
-
-.head.sticky ul li a{
-    color: #ffffff;
-}
-
-.head.sticky ul li a:hover{
-    color: red;
-    border: #fffafa 3px solid;
-    border-radius: 30px;
-    padding: 5px 10px;
-    background:none;
-}
-.head.sticky {
-  
-    background: #000000;
-}
-/* Media queries 
-
-@media only screen and (max-width: 768px) {
-    .head {
-        padding: 15px 10px;
-        font-size: 16px;
-    }
-
-    .head ul li a {
-        margin: 0 10px;
-        
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .head {
-        padding: 20px 20px;
-        font-size: 14px;
-    }
-
-    .head ul {
-        flex-direction: row;
-    }
-
-    .head ul li {
-        margin-bottom: 10px;
-    }
-
-    .head ul li a {
-        margin: 0;
-        padding: 0px 7.5px;
-    }
-    .head ul li a:hover {
-         cursor: default;
-    }
-    .word1 {
-    padding-top: 50px;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     color: #ffffff;
-
- }
-}
- @media only screen and (max-width: 380px) {
-     .head {
-         padding: 20px 20px;
-         font-size: 14px;
-     }
-
-     .head ul {
-         flex-direction: row;
-     }
-
-     .head ul li {
-         margin-bottom: 10px;
-     }
-
-     .head ul li a {
-         margin: 0;
-         padding: 0px 2.5px;
-     }
-
-     .head ul li a:hover {
-        color: #ff5e00;
-        border: none;
-        border-radius: 0;
-        padding: 0;
-        background: none;
-     }
-     .head.sticky ul li a:hover{
-        color: red;
-        border: none;
-        border-radius: 0;
-        padding: 5px 1px;
-        background:none;
-    }
-     .word1 {
-         padding-top: 5px;
-         color: #ffffff;
-
-     }
-         .major .boldword{
-            font-weight: bolder;
-            font-size: 30px;
-            color: #000000;
-            padding-bottom: 20px;
-        
-
-         }
-         .major .text{
-            color: rgb(8, 8, 8);
-            font-size: 16px;
-            text-align: center;
-            border: 0;
-            word-spacing: normal;
-            line-height: 1.5rem;
-         }
-        .copy {
-            margin-top: 50px;
-            color: #ffffff;
-            
-            font-size: 15px;
-        }
- }
-
- */
 
 
 nav {
@@ -310,78 +137,90 @@ nav .logo {
 }
 
 
-
-
-
 .background-img {
     position: relative;
     background-image: linear-gradient(rgb(7, 7, 8), rgba(20, 21, 22, 0.4), rgba(0, 0, 0, 0.849), rgb(5, 5, 24)), url(siomai-pic1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    height: 180px;
-    padding-bottom: 100%;
     background-size: cover;
 }
-@media only screen and (max-width: 480px) {
+
+@media (min-width: 300px) {
     .background-img {
-            padding-bottom: 80%;
-        }
-    
-        #banner {
-            padding-top: 50px;
-        }
+        height: 300px;
+        /* Adjust the height for larger screens */
+        padding-bottom: 150%;
     }
-  
-
-
-@media (min-width: 768px) {
+}
+@media (min-width: 367px) {
     .background-img {
-        padding-bottom: 50%;
+        height: 300px;
+        /* Adjust the height for larger screens */
+        padding-bottom: 130%;
+    }
+}
+@media (min-width: 400px) {
+    .background-img {
+        height: 300px;
+        /* Adjust the height for larger screens */
+        padding-bottom: 120%;
+        
+    }
+}
+@media (min-width: 435px) {
+    .background-img {
+        height: 300px;
+        /* Adjust the height for larger screens */
+        padding-bottom: 100%;
+
+    }
+}
+@media (min-width: 500px) {
+    .background-img {
+        height: 300px;
+        /* Adjust the height for larger screens */
+        padding-bottom: 80%;
+
+    }
+}
+@media (min-width: 800px) {
+    .background-img {
+        height: 400px;
+        /* Adjust the height for even larger screens */
+        padding-bottom: 60%;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .background-img {
-        padding-bottom: 50%;
+        height: 500px;
+        /* Adjust the height for extra large screens */
     }
 }
 
-body{
-   
-    background-color: #e0f1fc;
-}
 
-@media only screen and (max-width: 1024px){
-    .background-img {
-            padding-bottom: 100%;
-        }
-        #banner{
-            padding-top: 10px;
-        }
-        #custom-orders{
-            padding: 100%;
-        }
-    }
+
  #banner {
      display: flex;
      justify-content: center;
      align-items: center;
      text-align: center;
      color: #ffffff;
+    
      
  }
 
  .word1 {
     margin-top: 20%;
      max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     
  }
 
  .word1 h2 {
-     font-size: 35px;
+    font-size: 50px;
      padding-bottom: 5px;
  }
 
@@ -400,17 +239,13 @@ body{
     color: #ffffff ;
      
  }
+
+
+
+
 .major{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    padding: 100px;
-    border-radius: 5%;
-    justify-content: center;
-    
-    text-align: center;
-   margin-top: 30%;
-   width: auto;
+    margin-top: 35%;
+    width: auto;
  
 }
 a {
