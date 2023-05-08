@@ -168,7 +168,7 @@ nav .logo {
         
     }
 }
-@media (min-width: 435px) {
+@media (min-width: 428px) {
     .background-img {
         height: 300px;
         /* Adjust the height for larger screens */
@@ -177,6 +177,14 @@ nav .logo {
     }
 }
 @media (min-width: 500px) {
+    .background-img {
+        height: 300px;
+        /* Adjust the height for larger screens */
+        padding-bottom: 80%;
+
+    }
+}
+@media (min-width: 600px) {
     .background-img {
         height: 300px;
         /* Adjust the height for larger screens */
