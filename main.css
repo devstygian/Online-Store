@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+body {
+    min-width: 300px;
+    /* Set the minimum width to 300 pixels */
+}
 
 nav {
     background: none;

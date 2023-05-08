@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    min-width: 300px;
+    /* Set the minimum width to 300 pixels */
+}
 
 nav {
     background: none;
@@ -16,7 +20,7 @@ nav {
     position: fixed;
     background-color: #000000;
 
-    
+
 }
 
 nav .mainMenu {
@@ -27,7 +31,7 @@ nav .mainMenu {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 nav .mainMenu li a {
@@ -40,9 +44,10 @@ nav .mainMenu li a {
     transition: 0.2s ease;
     text-align: center;
 
-    
-   
+
+
 }
+
 nav .mainMenu li a:hover {
     color: rgb(255, 255, 255);
     border: #ffffff 3px solid;
@@ -50,6 +55,7 @@ nav .mainMenu li a:hover {
     padding: 5px 10px;
     background: #ff2600;
 }
+
 nav .mainMenu.sticky ul li a:hover {
     color: red;
     border: #fffafa 3px solid;
@@ -78,7 +84,7 @@ nav .mainMenu .closeMenu,
     font-size: 2rem;
     display: none;
     cursor: pointer;
-    
+
 }
 
 nav .logo {
@@ -88,12 +94,14 @@ nav .logo {
 }
 
 @media (max-width: 800px) {
-    nav{
+    nav {
         background-color: transparent;
     }
-    nav .mainMenu li a{
+
+    nav .mainMenu li a {
         color: #ffffff;
     }
+
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -107,7 +115,7 @@ nav .logo {
         background: rgba(0, 0, 0, 0.61);
         transition: top 1s ease 0s;
         display: none;
-       
+
     }
 
     nav .mainMenu .closeMenu {
@@ -117,7 +125,7 @@ nav .logo {
         left: 15px;
         color: #ff0000;
         padding: 5px 10px;
-        font-size: 2rem ;
+        font-size: 2rem;
     }
 
     nav .openMenu {
@@ -153,6 +161,7 @@ nav .logo {
         padding-bottom: 150%;
     }
 }
+
 @media (min-width: 367px) {
     .background-img {
         height: 300px;
@@ -160,15 +169,17 @@ nav .logo {
         padding-bottom: 130%;
     }
 }
+
 @media (min-width: 400px) {
     .background-img {
         height: 300px;
         /* Adjust the height for larger screens */
         padding-bottom: 120%;
-        
+
     }
 }
-@media (min-width: 435px) {
+
+@media (min-width: 428px) {
     .background-img {
         height: 300px;
         /* Adjust the height for larger screens */
@@ -176,6 +187,7 @@ nav .logo {
 
     }
 }
+
 @media (min-width: 500px) {
     .background-img {
         height: 300px;
@@ -184,6 +196,16 @@ nav .logo {
 
     }
 }
+
+@media (min-width: 600px) {
+    .background-img {
+        height: 300px;
+        /* Adjust the height for larger screens */
+        padding-bottom: 80%;
+
+    }
+}
+
 @media (min-width: 800px) {
     .background-img {
         height: 400px;
@@ -201,72 +223,76 @@ nav .logo {
 
 
 
- #banner {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     color: #ffffff;
-    
-     
- }
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
 
- .word1 {
+
+}
+
+.word1 {
     margin-top: 20%;
-     max-width: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    
- }
 
- .word1 h2 {
+}
+
+.word1 h2 {
     font-size: 50px;
-     padding-bottom: 5px;
- }
+    padding-bottom: 5px;
+}
 
- .word1 p {
-     font-size: 25px;
+.word1 p {
+    font-size: 25px;
     padding-bottom: 10px;
     margin-bottom: 5%;
- }
+}
 
- .learnMore {
+.learnMore {
     background-color: #ff5e00;
     border: #ffffff 1px solid;
     padding: 10px;
     border-radius: 20px;
     font-size: 20px;
-    color: #ffffff ;
-     
- }
+    color: #ffffff;
+
+}
 
 
 
 
-.major{
+.major {
     margin-top: 35%;
     width: auto;
- 
+
 }
+
 a {
     text-decoration: none;
 }
-.major h2{
+
+.major h2 {
     font-size: 35px;
 }
 
 
-.major h2{
+.major h2 {
     padding-bottom: 20px;
     font-size: 25px;
-  
+
 }
-.major p{
+
+.major p {
     line-height: 2rem;
     font-size: 20px;
-    
+
 }
-.btn-menu1{
+
+.btn-menu1 {
     margin-top: 20px;
     border: 1px #000000 solid;
     background-color: #ff4a03;
@@ -274,10 +300,12 @@ a {
     padding: 10px;
     letter-spacing: 2px;
 }
-.btn-menu1 a{
+
+.btn-menu1 a {
     color: #000000;
 }
-.btn-menu1 a:hover{
+
+.btn-menu1 a:hover {
     color: #ffffff;
 }
 
@@ -364,16 +392,18 @@ a {
 
 
 
-.container1  {
+.container1 {
     margin-top: 10%;
     margin-bottom: 15%;
     margin-left: 20px;
     margin-right: 20px;
 }
+
 .container1 h2 {
-    
+
     padding-bottom: 2rem;
 }
+
 .container1 .p1 {
 
     padding-bottom: 2rem;
@@ -405,11 +435,12 @@ a {
     font-size: 16px;
 }
 
-.logo3{
+.logo3 {
     color: #ff4800;
     font-size: 25px;
     padding-bottom: 20px;
 }
+
 @media only screen and (max-width: 768px) {
     .box-special {
         flex-basis: calc(50% - 20px);
@@ -427,8 +458,8 @@ a {
 
 
 .container3 {
-  
-   
+
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
