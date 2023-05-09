@@ -60,38 +60,40 @@
                         <span class="discount">Cash on Delivery</span>
                 </div>
             </section>
+
+
             <label>
                 <input class="input" type="text" name="Name" placeholder="Full Name" required>
-            </label>
-            <label>
+            
                 <input class="input" type="number" name="Quantity" id="stock-count" placeholder="Quantity" required>
                 <input class="input" type="text" name="Address" placeholder="Address" required>
-            </label>
-            <label>
+            
               
 
                 <select class="input" name="Siomai Flavor" placeholder="Floor" required>
                     
                     <option value="Floor">Floor</option>
-                    <option value="None">N/A</option>
                     <option value="First / Ground floor">First / Ground floor</option>
                     <option value="Second floor">Second floor</option>
                     <option value="Third floor">Third floor</option>
                 </select>
 
-                <input class="input" type="text" name="Grade, Sections, block and Strand" placeholder="Grade, Sections, Strand, and Block." required>
-
-                <input class="input" type="text" name="Adviser Name" placeholder="Adviser Name" required>
-            <label>
-                
-             </ladel>
-            </label>
-            <label>
                 <select class="input" name="Siomai Flavor" required>
                     <option value="">Select a flavor</option>
                     <option value="">Chicken flavor</option>
                     <option value="Siomai">Pork flavor</option>
                 </select>
+            </label>
+            <label>
+                <input class="input" type="text" name="Grade, Sections, block and Strand" placeholder="Grade, Sections, Strand, and Block." required>
+
+                
+           
+                <input class="input" type="text" name="Adviser Name" placeholder="Adviser Name" required>
+          
+            
+         
+               
 
                 <select class="input" name="Time of delivery" required>
                     <option value="Time of Delivery">Time of Delivery</option>
@@ -116,19 +118,20 @@
                     <option value="4:30pm">4:30pm</option>
                 </select>              
                 
-            </label>
+           
         </div>
         <div class="msg">
-            <label>
+           
                 <textarea class="area" id="message" name="Message" placeholder="Additional notes"></textarea>
-            </label>
+         
         </div>
+        </label>
         <div class="sendEmail">
             <button class="submit" type="submit" id="submit-button">Place Order</button>
         </div>
 
     </form>
-</div>
+
 
         <script>
             window.onbeforeunload = () => {
@@ -153,6 +156,7 @@
     </section>
    </div>
 
+</div>
 </body>
 
 </html>

@@ -137,6 +137,9 @@
     padding-top: 40px;
     padding-bottom: 100px;
     background-color: #fcedbb;
+    height: 1000%;
+    margin-left: -8px;
+    margin-right: -10px;
 
 }
 
@@ -282,8 +285,9 @@
         font-size: 15px;
         color: #000000;
         padding: 20px 10px;
-        margin: 0;
+        margin-top: 100px;
         float: none;
+        margin-bottom: -100px;
         
     }
 }
