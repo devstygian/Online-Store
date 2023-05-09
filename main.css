@@ -148,7 +148,7 @@ nav .mainMenu .closeMenu,
     }
 
     nav .mainMenu li a:hover {
-        background: none;
+        background: #010847;
         color: rgb(255, 123, 0);
     }
 
