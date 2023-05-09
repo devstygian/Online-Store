@@ -40,11 +40,11 @@ nav .mainMenu {
     display: flex;
     list-style: none;
     position: relative;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-left: 20.5%;
+    margin-right: 10.5%;
     
 }
 
@@ -56,7 +56,7 @@ nav .mainMenu li a {
     color: #ffffff;
     font-size: 18px;
     transition: 0.2s ease;
-    text-align: center;
+    text-align: right;
 
     
    
@@ -99,11 +99,7 @@ nav .mainMenu .closeMenu,
     
 }
 
-nav .logo {
-    margin: 6px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
+
 
 @media (max-width: 800px) {
     nav{
@@ -162,6 +158,10 @@ nav .logo {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+
+
+    max-width: 100%;
+    height: auto;
 }
 
 @media (min-width: 300px) {
@@ -227,12 +227,37 @@ nav .logo {
 
 
 
+/*Just added*/
+@media screen and (max-width: 400px) {
+    .background-image {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .background-image {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .background-image {
+        max-width: 40%;
+    }
+}
+
+
+
+
+
+
  #banner {
      display: flex;
      justify-content: center;
      align-items: center;
      text-align: center;
      color: #ffffff;
+   
     
      
  }
@@ -242,6 +267,7 @@ nav .logo {
      max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 20px;
     
  }
 
@@ -254,6 +280,7 @@ nav .logo {
      font-size: 25px;
     padding-bottom: 10px;
     margin-bottom: 5%;
+   
  }
 
  .learnMore {
@@ -290,6 +317,7 @@ a {
 .major p{
     line-height: 2rem;
     font-size: 20px;
+    padding: 0px 20px;
     
 }
 .btn-menu1{
