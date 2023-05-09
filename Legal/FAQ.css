@@ -106,8 +106,9 @@ p {
     padding-left: 30px;
 }
 
-.content li {
+li {
     margin-bottom: 5px;
+    list-style: none;
 }
 
 /* Styling for links within the privacy policy */
