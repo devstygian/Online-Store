@@ -88,7 +88,7 @@ nav .openMenu {
     background-color: #525252b6;
     border-radius: 10%;
     padding: 5px 10px;
-    color: #fffafa;
+    color: #000000;
 }
 
 nav .mainMenu .closeMenu,
@@ -96,6 +96,7 @@ nav .mainMenu .closeMenu,
     font-size: 2rem;
     display: none;
     cursor: pointer;
+   
     
 }
 
@@ -106,7 +107,14 @@ nav .mainMenu .closeMenu,
         background-color: transparent;
     }
     nav .mainMenu li a{
-        color: #ffffff;
+        color: #000000;
+        background-color: #fcffcb;
+        border-radius: 30%;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        font-size: 18x;
+        font-weight: bolder;
+        text-align: center;
     }
     nav .mainMenu {
         height: 100vh;
@@ -118,7 +126,7 @@ nav .mainMenu .closeMenu,
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0.61);
+        background: transparent;
         transition: top 1s ease 0s;
         display: none;
        
@@ -129,7 +137,7 @@ nav .mainMenu .closeMenu,
         position: absolute;
         top: 13px;
         left: 15px;
-        color: #ff0000;
+        color: #ffffff;
         padding: 5px 10px;
         font-size: 2rem ;
     }
