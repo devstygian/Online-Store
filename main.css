@@ -105,30 +105,36 @@ nav .mainMenu .closeMenu,
 @media (max-width: 800px) {
     nav{
         background-color: transparent;
+        text-align: left;
     }
     nav .mainMenu li a{
-        color: #000000;
-        background-color: #fcffcb;
+        color: #ffffff;
+        background-color: #000000;
         border-radius: 30%;
         padding: 10px 20px;
         margin-bottom: 10px;
         font-size: 18x;
         font-weight: bolder;
         text-align: center;
+        
     }
     nav .mainMenu {
         height: 100vh;
         position: fixed;
-        top: 0px;
+        top: -300px;   
         right: 0px;
         left: 0px;
         z-index: 10;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: transparent;
-        transition: top 1s ease 0s;
+        background: #f7e8dba2;
+        transition: left -0.1s ease-in-out;
         display: none;
+        
+        width: 50vh;
+        margin-left: -3px;
+
        
     }
 
@@ -137,9 +143,12 @@ nav .mainMenu .closeMenu,
         position: absolute;
         top: 13px;
         left: 15px;
-        color: #ffffff;
+        color: #000000;
         padding: 5px 10px;
         font-size: 2rem ;
+       
+        
+        
     }
 
     nav .openMenu {
@@ -157,6 +166,17 @@ nav .mainMenu .closeMenu,
         padding: 12px;
     }
 }
+
+
+@media screen and (max-width: 400px) {
+    nav.mainMenu {
+        transition-duration: 0.2s;
+        /* Adjust the transition duration for small screens */
+        background: #f7e8db;
+    }
+}
+
+
 
 
 .background-img {
