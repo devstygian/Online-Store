@@ -206,6 +206,13 @@ nav .mainMenu .closeMenu,
         padding-bottom: 160%;
     }
 }
+@media (min-width: 390px) {
+    .background-img {
+        height: 300px;
+        /* Adjust the height for larger screens */
+        padding-bottom: 140%;
+    }
+}
 @media (min-width: 400px) {
     .background-img {
         height: 300px;
@@ -214,23 +221,24 @@ nav .mainMenu .closeMenu,
         
     }
 }
-@media (min-width: 420px) {
+
+@media (min-width: 430px) {
     .background-img {
         height: 300px;
         /* Adjust the height for larger screens */
-        padding-bottom: 130%;
+        padding-bottom: 120%;
 
     }
 }
-@media (min-width: 466px) {
+@media (min-width: 470px) {
     .background-img {
         height: 300px;
         /* Adjust the height for larger screens */
-        padding-bottom: 110%;
+        padding-bottom: 100%;
 
     }
 }
-@media (min-width: 500px) {
+@media (min-width: 490px) {
     .background-img {
         height: 300px;
         /* Adjust the height for larger screens */
