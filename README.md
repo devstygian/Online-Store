@@ -52,6 +52,8 @@ I would like to express my gratitude to the following:
 
 - FreePrivacyPolicy and TermsFeed: Acknowledgment to FreePrivacyPolicy and TermsFeed for their services in generating privacy policies and terms of service documents. These resources have been instrumental in ensuring legal compliance and user protection within the project.
 
+- My Entrepreneur subject instructor: Acknowledgment to Ma'am Aiza Diorda for their guidance, feedback, and expertise in the field of entrepreneurship. Their knowledge and insights have been instrumental in shaping the Siomai Dynasty Web Project.
+
 - Friends and Family: Gratitude to my family members and to friends Erick, Julia, and Josh for their unwavering support, encouragement, and valuable feedback throughout the development of this project. Their belief in my abilities and their willingness to provide assistance have been invaluable.
 
 Thank you to everyone who has contributed directly or indirectly to the development of this project. Your contributions have played a significant role in its success.
