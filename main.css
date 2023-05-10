@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif, Arial, Verdana,sans-serif, 'open-sans';
+   font-family: "Open Sans", sans-serif;
 }
 body {
     min-width: 300px;
@@ -277,7 +277,11 @@ nav .mainMenu .closeMenu,
 
 
 
-
+@media only screen and (max-width: 767px) {
+    .open-sans-font {
+        font-weight: bold;
+    }
+}
 
  #banner {
      display: flex;
