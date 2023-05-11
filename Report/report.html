@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bug Reporting Form</title>
+
+        <link rel="stylesheet" href="report.css" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+   <h1>Report a Bug</h1>
+    <form action="https://formspree.io/your_email@example.com" method="POST">
+        <label for="bug-description">Bug Description:</label>
+        <textarea id="bug-description" name="bug-description" required></textarea>
+        
+        <label for="steps-to-reproduce">Steps to Reproduce:</label>
+        <textarea id="steps-to-reproduce" name="steps-to-reproduce" required></textarea>
+        
+        <label for="expected-behavior">Expected Behavior:</label>
+        <textarea id="expected-behavior" name="expected-behavior" required></textarea>
+        
+        <label for="actual-behavior">Actual Behavior:</label>
+        <textarea id="actual-behavior" name="actual-behavior" required></textarea>
+        
+        <label for="attachment">Attachment:</label>
+        <input type="file" id="attachment" name="attachment">
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
