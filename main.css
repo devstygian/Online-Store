@@ -39,13 +39,14 @@ nav {
 nav .mainMenu {
     display: flex;
     list-style: none;
+    /*
     position: relative;
     justify-content: right;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     margin-right: 10.5%;
-    
+    */
 }
 
 nav .mainMenu li a {
@@ -56,7 +57,7 @@ nav .mainMenu li a {
     color: #ffffff;
     font-size: 18px;
     transition: 0.2s ease;
-    text-align: right;
+    /*text-align: right;*/
     
 
     
@@ -69,27 +70,27 @@ nav .mainMenu li a:hover {
     padding: 10px 20px;
     background: #ff2600;
 }
-nav .mainMenu.sticky ul li a:hover {
+/*nav .mainMenu.sticky ul li a:hover {
     color: red;
     border: #fffafa 3px solid;
     border-radius: 30px;
     padding: 5px 10px;
     background: none;
-}
+}*/
 
 
 
 
 nav .openMenu {
-    font-size: 1rem;
+    font-size: 2rem;
     margin: 20px;
     display: none;
     cursor: pointer;
-    border: #010847 1px solid;
-    background-color: #525252b6;
+    border: #ff0000 1px solid;
+    background-color: #000000;
     border-radius: 10%;
     padding: 5px 10px;
-    color: #000000;
+    color: #f7e8db;
 }
 
 nav .mainMenu .closeMenu,
@@ -106,8 +107,9 @@ nav .mainMenu .closeMenu,
 @media (max-width: 800px) {
     nav{
         background-color: transparent;
-        text-align: left;
+        /*text-align: left;*/
     }
+    /*
     nav .mainMenu li a{
         color: #ffffff;
         background-color: #000000;
@@ -118,7 +120,7 @@ nav .mainMenu .closeMenu,
         font-weight: bolder;
         text-align: center;
         
-    }
+    }*/
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -129,12 +131,12 @@ nav .mainMenu .closeMenu,
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: #f7e8dba2;
-        transition: left -0.1s ease-in-out;
+         background: rgba(0, 0, 0, 0.733);
+        transition: top 1s ease 0s;
         display: none;
         
-        width: 50vh;
-        margin-left: -3px;
+        /*width: 50vh;
+            margin-left: -3px;*/
 
        
     }
@@ -142,11 +144,10 @@ nav .mainMenu .closeMenu,
     nav .mainMenu .closeMenu {
         display: block;
         position: absolute;
-        top: 13px;
-        left: 15px;
-        color: #000000;
-        padding: 5px 10px;
-        font-size: 2rem ;
+        top: 20px;
+        left: 25px;
+        color: #ffffff;
+        font-size: 3rem ;
        
         
         
@@ -154,12 +155,13 @@ nav .mainMenu .closeMenu,
 
     nav .openMenu {
         display: block;
-        text-align: left;
+        /*text-align: left;*/
     }
 
     nav .mainMenu li a:hover {
-        background: #010847;
-        color: rgb(255, 123, 0);
+        background: #000000;
+        color: rgb(255, 255, 255);
+        border: #ff0000 1px solid;
     }
 
     .icons i {
@@ -174,6 +176,7 @@ nav .mainMenu .closeMenu,
         transition-duration: 0.2s;
         /* Adjust the transition duration for small screens */
         background: #f7e8db;
+ 
     }
 }
 
@@ -182,7 +185,7 @@ nav .mainMenu .closeMenu,
 
 .background-img {
     position: relative;
-    background-image: linear-gradient(rgb(7, 7, 8), rgba(20, 21, 22, 0.4), rgba(0, 0, 0, 0.849), rgb(5, 5, 24)), url(siomai-pic1.jpg);
+    background-image: linear-gradient(rgb(7, 7, 8), rgba(20, 21, 22, 0.4), rgba(0, 0, 0, 0.849), rgb(5, 5, 24)), url(./HomePageImage/siomai-pic1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
