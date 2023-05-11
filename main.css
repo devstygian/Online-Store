@@ -57,6 +57,7 @@ nav .mainMenu li a {
     font-size: 18px;
     transition: 0.2s ease;
     text-align: right;
+    
 
     
    
@@ -65,7 +66,7 @@ nav .mainMenu li a:hover {
     color: rgb(255, 255, 255);
     border: #ffffff 3px solid;
     border-radius: 30px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     background: #ff2600;
 }
 nav .mainMenu.sticky ul li a:hover {

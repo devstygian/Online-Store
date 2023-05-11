@@ -5,12 +5,28 @@
     <title>Bug Reporting Form</title>
 
         <link rel="stylesheet" href="report.css" />
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../image/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../image/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../image/favicon-16x16.png">
+        <link rel="manifest" href="image/site.webmanifest">
+
+        <meta property="og:title" content="Siomai Dynasty" />
+        <meta property="og:image" content="https://i.ibb.co/5rTz8Rb/Siomai-Dynasty-Final-Logo.png" />
+        <meta property="og:description" content="Order Now!" />
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="627">
 </head>
 
 <body>
-   <h1>Report a Bug</h1>
-    <form action="https://formspree.io/your_email@example.com" method="POST">
+   
+<div class="container3" id="container-form">
+    <h1>Report a Bug</h1>
+     <form action="https://formspree.io/f/xyyavzrd" method="POST">
         <label for="bug-description">Bug Description:</label>
         <textarea id="bug-description" name="bug-description" required></textarea>
         
@@ -28,6 +44,14 @@
         
         <input type="submit" value="Submit">
     </form>
+</div>
+    <script>
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+    </script>
 </body>
 
 </html>
