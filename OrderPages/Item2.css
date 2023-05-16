@@ -138,8 +138,7 @@
  .container3 {
 
 
-     margin-left: auto;
-     margin-right: auto;
+
      margin-top: 10px;
 
      padding: 40px;
@@ -149,6 +148,11 @@
      display: flex;
      text-align: right;
      background-color: #fcedbb;
+    
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -68px;
+
 
 
  }
@@ -208,6 +212,7 @@
      background: #000000;
      margin-top: 5%;
      margin-right: 20px;
+     margin-bottom: 50px;
      line-height: 180%;
      color: rgb(255, 255, 255);
      border: 0;
@@ -255,6 +260,7 @@
      padding: 20px 10px;
      margin: 0;
      float: none;
+
 
  }
 
