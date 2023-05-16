@@ -11,10 +11,12 @@ body {
 }
 
 .logo img {
-    width: 150px;
-    /* Adjust the width of the logo as needed */
-    height: 90px;
-    /* Adjust the height of the logo as needed */
+    height: 6.125rem;
+    transition: all 0.3s ease-in-out;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-left: 5px;
+    width: 10rem;
     
 }
 /*@media only screen and (max-width: 798px) {
